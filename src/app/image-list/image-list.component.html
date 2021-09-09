@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+          <table class="table table-image">
+            <thead>
+              <tr>
+                <th scope="col">Thumbnail</th>
+                <th scope="col">Image</th>
+                <th scope="col">Title</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let image of images">
+              <tr>
+                <td class="w-25">
+                    <img src="{{image.thumbnailUrl}}" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td class="w-25">
+                    <img src="{{image.url}}" class="img-fluid img-thumbnail" alt="Sheep">
+                </td>
+                <td>{{image.title}}</td>
+              </tr>
+            </tbody>
+          </table>   
+      </div>
+    </div>
+  </div>
